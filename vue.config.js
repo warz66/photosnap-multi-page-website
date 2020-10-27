@@ -1,17 +1,9 @@
 //const path = require('path')
 
-//module.exports = {
-  /*chainWebpack: config => {
-    config.module
-      .rule('vue')
-      .test(/\.css$/)
-      .use('vue-loader')
-      .loader('vue-loader')
-      .end()
-  },*/
-  /*publicPath: process.env.NODE_ENV === 'production'
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
     ? './'
-    : '/',*/
+    : '/',
     //publicPath: '/photosnap-multi-page-website/'
     /*chainWebpack: config => {
       const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
@@ -38,7 +30,7 @@
       // mutate for development...
     }
   }*/
-//}
+}
 
 /*const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {

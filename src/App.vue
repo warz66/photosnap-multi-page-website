@@ -25,7 +25,6 @@ h1, h2 {
   line-height: 48px;
   letter-spacing: 4.17px;       
 }
-
 p {
   opacity: 60%;
 }
