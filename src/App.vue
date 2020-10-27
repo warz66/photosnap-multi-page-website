@@ -1,30 +1,32 @@
 <template>
-  <div id="nav">
+  <!--<div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </div>
+  </div>-->
   <router-view/>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import './assets/styles/minireset.min.css';
+/*@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");*/
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'DM Sans', sans-serif;
   text-align: center;
-  color: #2c3e50;
+  max-width: 1440px;
+  /*margin:0 auto;*/
+  font-size: 15px;
+  line-height: 25px;
 }
 
-#nav {
-  padding: 30px;
+h1, h2 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 4.17px;       
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+p {
+  opacity: 60%;
 }
 </style>
