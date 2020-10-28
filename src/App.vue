@@ -25,7 +25,18 @@ h1, h2 {
   line-height: 48px;
   letter-spacing: 4.17px;       
 }
+@media (max-width: 600px) {
+  h1, h2 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 3.33px;       
+}
+}
 p {
   opacity: 60%;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 </style>
