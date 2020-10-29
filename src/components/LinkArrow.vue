@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 div {
-  padding-top: 3px;
+  /*padding-top: 3px;*/
   width: max-content;
   font-weight: bold;
   letter-spacing: 2px;

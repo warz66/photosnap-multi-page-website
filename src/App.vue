@@ -33,7 +33,7 @@ h1, h2 {
 }
 }
 p {
-  opacity: 60%;
+  opacity: 0.6;
 }
 a {
   text-decoration: none;

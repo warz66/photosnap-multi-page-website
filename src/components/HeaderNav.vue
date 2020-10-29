@@ -1,7 +1,7 @@
 <template>
     <header>
       <div id="header-not-mobile">
-        <img src="../assets/images/shared/desktop/logo.svg" alt="">
+        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt=""></router-link>
         <ul>
           <li><router-link to="stories">STORIES</router-link></li>
           <li><router-link to="features">FEATURES</router-link></li>
@@ -10,17 +10,19 @@
         <button><span>GET AN INVITE</span></button>
       </div>
       <div id="header-mobile">
-        <img src="../assets/images/shared/desktop/logo.svg" alt="">
-        <button :class="[menuState ? 'is-active' : '' ]" @click="toggleMenu"></button>
+        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt=""></router-link>
+        <button :class="menuStateClass" @click="toggleMenu"></button>
       </div>
     </header>
     <transition name="slide">
-      <div v-if="menuState" id="menu-mobile" :class="[menuState ? 'is-active' : '' ]">
+      <div v-if="menuState" id="menu-mobile" :class="menuStateClass">
           <ul>
             <li><router-link to="stories">STORIES</router-link></li>
             <li><router-link to="features">FEATURES</router-link></li>
             <li><router-link to="pricing">PRICING</router-link></li>
           </ul>
+          <span id="line"></span>
+          <button><span>GET AN INVITE</span></button>
       </div>
     </transition>  
 </template>
@@ -36,12 +38,20 @@ export default {
   methods: {
     toggleMenu: function () {
       this.menuState = !this.menuState;
+    },
+  },
+  computed: {
+    menuStateClass: function() {
+      return this.menuState ? 'is-active' : '' ;
     }
   }
 }
 </script>
 
 <style scoped>
+  a {
+    margin-top: 5px;
+  }
   #header-not-mobile {
     margin:0 auto;
     display: flex;
@@ -61,20 +71,28 @@ export default {
     display: inline;
     font-weight: bold;
   }
-  #header-not-mobile button {
+  #header-not-mobile button,
+  #menu-mobile button {
     border:0;
-    width: 158px;
-    height: 40px;
     padding: 0px;
     font-family: 'DM Sans', sans-serif;
     background-color: black;
     color: white;
     font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 12px;
-    word-spacing: -2px;
-    transition: all 0.3s;
   }
+  #header-not-mobile button {
+    height: 40px;
+    width: 158px;
+    letter-spacing: 2px;  
+    font-size: 12px;
+    transition: all 0.3s;
+    word-spacing: -2px;
+  }
+  #menu-mobile button {
+    width: 100%;
+    height: 48px;
+  }
+
   #header-not-mobile button span {
     margin-right:6px;
   }
@@ -155,8 +173,23 @@ export default {
     }
   }
 
-  #menu-mobile ul {
+  #line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #bfbfbf;
+    margin: 20px 0;
+  }
+
+  #menu-mobile li:not(:last-of-type) {
+    padding-bottom: 20px;
+  }
+
+  #menu-mobile ul, #menu-mobile button {
     font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
   }
 
   @media (max-width: 1440px) {
@@ -177,6 +210,7 @@ export default {
     #menu-mobile.is-active {
       display: flex;
       justify-content: center;
+      flex-direction: column;
     }
   }
 </style>
