@@ -1,8 +1,4 @@
 <template>
-  <!--<div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>-->
   <router-view/>
 </template>
 
@@ -25,7 +21,7 @@ h1, h2 {
   line-height: 48px;
   letter-spacing: 4.17px;       
 }
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   h1, h2 {
   font-size: 32px;
   line-height: 40px;

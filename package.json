@@ -10,9 +10,11 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "google-fonts-webpack-plugin": "^0.4.4",
+    "lodash.uniqueid": "^4.0.1",
     "vue": "^3.0.2",
     "vue-loader-v16": "^16.0.0-beta.5.4",
-    "vue-router": "^4.0.0-beta.13"
+    "vue-router": "^4.0.0-beta.13",
+    "vue-unique-id": "^3.1.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.8",
