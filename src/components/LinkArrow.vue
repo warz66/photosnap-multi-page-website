@@ -1,11 +1,11 @@
 <template>
-    <div :style="'width: '+linkArrowWidth+';'">
-        <span :style="[backgroundColor ? 'background-image: linear-gradient(white,white);' : 'background-image: linear-gradient(black,black);']">
+    <a :style="'width: '+linkArrowWidth+';'">
+        <span class="link-arrow-text" :style="[backgroundColor ? 'background-image: linear-gradient(white,white);' : 'background-image: linear-gradient(black,black);']">
           <slot name="text"></slot>
         </span>
         <svg :stroke="[ backgroundColor ? 'white' : 'black' ]"
         xmlns="http://www.w3.org/2000/svg" width="43" height="14"><g fill="none" fill-rule="evenodd"><path d="M0 7h41.864M35.428 1l6 6-6 6"/></g></svg>
-    </div> 
+    </a> 
 </template>
 
 <script>
@@ -19,14 +19,14 @@ export default {
 </script>
 
 <style scoped>
-div {
+a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   width: max-content;
 }
-div span {
+a span {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 12px;
@@ -39,10 +39,7 @@ div span {
   background-position-x: left;
   background-position-y: 11px;
 }
-div:hover > span {
+a:hover > span {
   background-size: 100% 1px;
-}
-div svg {
-  /*margin-left: 21px;*/
 }
 </style>

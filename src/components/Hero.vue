@@ -25,7 +25,7 @@
 </template>
 
 <script>
-/*const uniqueId = require('lodash.uniqueid');*/
+const uniqueId = require('lodash.uniqueid');
 import LinkArrow from '@/components/LinkArrow.vue'
 
 export default {
@@ -69,7 +69,7 @@ export default {
       }
   },
   beforeMount: function() {
-    this.id = 'hero'+Date.now();
+    this.id = 'hero'+uniqueId();
     this.idDesignLine = this.id+'-designLine';
     this.idHeroText = this.id+'-heroText';
   },
@@ -92,7 +92,6 @@ export default {
   methods: {
     resizeDesignLine: function() {
       if (window.innerWidth > 600) {
-        console.log(this.idDesignLine);
         document.getElementById(this.idDesignLine).style.height = document.getElementById(this.idHeroText).offsetHeight+'px';
       }
     }

@@ -51,6 +51,7 @@ export default {
 <style scoped>
   a {
     margin-top: 5px;
+    color: black;
   }
   #header-not-mobile {
     margin:0 auto;
