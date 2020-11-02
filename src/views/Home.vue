@@ -62,8 +62,7 @@
   </Hero>
 
   <section class="stories-box">
-    <StorieBox 
-               :imgSrcDesktop='require("../assets/images/stories/desktop/mountains.jpg")' 
+    <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/mountains.jpg")' 
                :imgSrcMobile='require("../assets/images/stories/mobile/mountains.jpg")'
     >
     <template v-slot:storie-title>

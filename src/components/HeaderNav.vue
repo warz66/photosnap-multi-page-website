@@ -49,10 +49,18 @@ export default {
 </script>
 
 <style scoped>
+
   a {
     margin-top: 5px;
     color: black;
+    transition: opacity 0.2s;
   }
+  @media (hover: hover) and (pointer: fine) {
+      ul a:hover {
+      opacity: 0.3; 
+    }
+  }
+  
   #header-not-mobile {
     margin:0 auto;
     display: flex;
@@ -86,7 +94,7 @@ export default {
     width: 158px;
     letter-spacing: 2px;  
     font-size: 12px;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
     word-spacing: -2px;
   }
   #menu-mobile button {

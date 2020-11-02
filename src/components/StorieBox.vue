@@ -47,13 +47,13 @@ export default {
     color: white;
     max-height: 500px;
     cursor: pointer;
+    transition: all 0.4s;
 }
 @media (hover: hover) and (pointer: fine) {
     .storie-box:hover {
         transform: translateY(-24px);
-        transition: all 0.5s;
     }
-    .storie-box:hover::after {
+    .storie-box::after {
         position: absolute;
         content: ''; 
         width: 100%;
@@ -61,6 +61,11 @@ export default {
         background: linear-gradient(45deg, #FFC593 0%, #BC7198 25%, #5A77FF 50%);
         bottom:0;
         left:0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .storie-box:hover::after {
+        opacity: 1;
     }
 
 }
