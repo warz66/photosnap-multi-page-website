@@ -73,8 +73,7 @@
       John Appleseed 
     </template> 
     </StorieBox>
-    <StorieBox :date='false'
-               :imgSrcDesktop='require("../assets/images/stories/desktop/cityscapes.jpg")' 
+    <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/cityscapes.jpg")' 
                :imgSrcMobile='require("../assets/images/stories/mobile/cityscapes.jpg")'
     >
     <template v-slot:storie-title>
@@ -84,8 +83,7 @@
       Benjamin Cruz
     </template> 
     </StorieBox>
-    <StorieBox :date='false'
-               :imgSrcDesktop='require("../assets/images/stories/desktop/18-days-voyage.jpg")' 
+    <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/18-days-voyage.jpg")' 
                :imgSrcMobile='require("../assets/images/stories/mobile/18-days-voyage.jpg")'
     >
     <template v-slot:storie-title>
@@ -95,8 +93,7 @@
       Alexei Borodin 
     </template> 
     </StorieBox>
-    <StorieBox :date='false'
-               :imgSrcDesktop='require("../assets/images/stories/desktop/architecturals.jpg")' 
+    <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/architecturals.jpg")' 
                :imgSrcMobile='require("../assets/images/stories/mobile/architecturals.jpg")'
     >
     <template v-slot:storie-title>
@@ -107,6 +104,41 @@
     </template> 
     </StorieBox>
   </section>
+
+  <section class="features-box">
+    <FeatureBox :imgSrc='require("../assets/images/features/desktop/responsive.svg")'>
+      <template v-slot:feature-title>
+        100% Responsive
+      </template>
+      <template v-slot:feature-text>
+        No matter which the device you’re on, our site is fully responsive and stories 
+        look beautiful on any screen.
+      </template> 
+    </FeatureBox>
+
+    <FeatureBox :imgSrc='require("../assets/images/features/desktop/no-limit.svg")'>
+      <template v-slot:feature-title>
+        No Photo Upload Limit
+      </template>
+      <template v-slot:feature-text>
+        Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
+        share all of your stories in one go.
+      </template> 
+    </FeatureBox>  
+
+    <FeatureBox :imgSrc='require("../assets/images/features/desktop/embed.svg")'>
+      <template v-slot:feature-title>
+        Available to Embed
+      </template>
+      <template v-slot:feature-text>
+        Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
+        Google Maps, and more.
+      </template> 
+    </FeatureBox>
+  </section>
+
+  <Footer/>
+
 </template>
 
 <script>
@@ -114,22 +146,57 @@
 import HeaderNav from '@/components/HeaderNav.vue'
 import Hero from '@/components/Hero.vue'
 import StorieBox from '@/components/StorieBox.vue'
+import FeatureBox from '@/components/FeatureBox.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     HeaderNav,
     Hero,
-    StorieBox
+    StorieBox,
+    FeatureBox,
+    Footer
   },
 }
 </script>
 
 <style>
 .stories-box {
-  /*margin-top: 45px;*/
+  /*margin-top: 42px;*/ /* mobile ajuste test */
   display: flex;
   width: 100%;
   flex-wrap: wrap;
 }
+
+.features-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 104px;
+  padding: 120px 11.325vw;
+}
+@media (max-width: 1006px) {
+  .features-box {
+    padding: 120px 39px;
+  } 
+} 
+@media (max-width: 785px) {
+  .features-box {
+    grid-template-columns: 1fr;
+    padding: 120px 19.81vw;
+    row-gap: 80px;
+  }
+  .features-box .feature-box:nth-child(2) > div:first-of-type { /* hack à mieux faire */ 
+    margin-bottom: 66px;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .features-box {
+    padding: 80px 8.29vw;
+    row-gap: 56px;
+  }  
+}   
+
 </style>

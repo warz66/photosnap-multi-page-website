@@ -1,7 +1,5 @@
 <template>
     <div class="storie-box">
-        <!--<img class="storie-img-desktop" :src="imgSrcDesktop" alt="create-and-share.jpg">
-        <img class="storie-img-mobile" :src="imgSrcMobile" alt="create-and-share.jpg">-->
         <picture>
             <source :srcset="imgSrcMobile" media="(max-width: 500px)" type="image/jpeg">
             <img :src="imgSrcDesktop" alt="create-and-share.jpg">
@@ -12,12 +10,11 @@
             <span class="storie-author">by <slot name="storie-author">{{author}}</slot></span>
             <span class="line"></span>
             <LinkArrow :backgroundColor='true' :linkArrowWidth="'100%'">
-                <template v-slot:text>READ STORY</template>  
+                READ STORY 
             </LinkArrow>
         </div>     
     </div>
 </template>    
-
 
 <script>
 import LinkArrow from '@/components/LinkArrow.vue'
@@ -34,6 +31,7 @@ export default {
   },
 }
 </script>
+
 <style>
 @media (hover: hover) and (pointer: fine) {
     .storie-box:hover .link-arrow-text {
@@ -41,6 +39,7 @@ export default {
     }
 }
 </style>
+
 <style scoped>
 .storie-box {
     position: relative; 

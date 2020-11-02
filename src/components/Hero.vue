@@ -10,7 +10,7 @@
                 <slot name="hero-paragraph"></slot> 
                 </p>
                 <LinkArrow v-if="linkArrow" :backgroundColor='this.backgroundColor' :linkArrowWidth="this.linkArrowWidth">
-                  <template v-slot:text>{{linkArrowText}}</template>  
+                  {{linkArrowText}} 
                 </LinkArrow>
             </div>
         </div>
