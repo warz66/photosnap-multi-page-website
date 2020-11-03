@@ -7,7 +7,7 @@
 @import './assets/styles/minireset.min.css';
 /*@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");*/
 
-.attribution { font-weight: bold; font-size: 12px; text-align: center; margin-top: 10px; padding: 10px; /*color: darkgrey;*/ font-family: 'DM Sans', sans-serif;
+.attribution { font-size: 12px; text-align: center; margin-top: 10px; padding: 10px; /*color: darkgrey;*/ font-family: 'DM Sans', sans-serif;
 background-image: linear-gradient(45deg, #5A77FF, #BC7198, #FFC593);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -21,14 +21,14 @@ background-image: linear-gradient(45deg, #5A77FF, #BC7198, #FFC593);
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-/*.attribution a { color: lightgrey }*/
+.attribution a { font-weight: bold; }
 
 body {
   background: linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url('./assets/images/design/desktop/presence.png');
 }
 
 #app {
-  margin-top: 40px !important;
+  margin-top: 50px !important;
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   max-width: 1440px;

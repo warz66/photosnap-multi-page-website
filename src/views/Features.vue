@@ -82,19 +82,27 @@
     </FeatureBox>
   </section>
 
+  <InviteBanner/>
+
+  <Footer/>
+
 </template>
 
 <script>
 import HeaderNav from '@/components/HeaderNav.vue'
 import Hero from '@/components/Hero.vue'
 import FeatureBox from '@/components/FeatureBox.vue'
+import InviteBanner from '@/components/InviteBanner.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Features',
   components: {
     HeaderNav,
     Hero,
-    FeatureBox
+    FeatureBox,
+    InviteBanner,
+    Footer
   },
 }
 </script>
@@ -105,7 +113,7 @@ export default {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 104px;
-  padding: 160px 165px 176px 165px;
+  padding: 160px 165px 158px 165px;
 }
 @media (max-width: 1006px) {
   .features-box {
@@ -115,19 +123,23 @@ export default {
 @media (max-width: 785px) {
   .features-box {
     grid-template-columns: 1fr 1fr;
-    padding: 112px 38.5px;
+    padding: 111px 38.5px;
     row-gap: 76.5px;
   }
   .features-box .feature-box:nth-child(2) > div:first-of-type { /* hack à mieux faire */ 
-    margin-bottom: 66px;
-    height: auto;
+    /*margin-bottom: 66px;
+    height: auto;*/
   }
 }
 @media (max-width: 500px) {
   .features-box {
     grid-template-columns: 1fr;
-    padding: 64px 32.5px 91px 32.5px;
-    row-gap: 56px;
+    padding: 64px 32.5px 89px 32.5px;
+    row-gap: 55px;
+  }
+  .features-box .feature-box:nth-child(2) > div:first-of-type {
+    margin-bottom: 66px;
+    height: auto;
   }  
 }   
 </style>
