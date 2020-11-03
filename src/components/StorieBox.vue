@@ -5,9 +5,9 @@
             <img :src="imgSrcDesktop" alt="create-and-share.jpg">
         </picture>
         <div class="storie-text">
-            <span class="storie-date" v-if="date"><slot name="storie-date">{{date}}</slot></span>
-            <h3><slot name="storie-title">{{title}}</slot></h3>
-            <span class="storie-author">by <slot name="storie-author">{{author}}</slot></span>
+            <span class="storie-date"><slot name="storie-date"></slot></span>
+            <h3><slot name="storie-title"></slot></h3>
+            <span class="storie-author">by <slot name="storie-author"></slot></span>
             <span class="line"></span>
             <LinkArrow :backgroundColor='true' :linkArrowWidth="'100%'">
                 READ STORY 
@@ -25,7 +25,7 @@ export default {
     LinkArrow,
   },
   props: {
-    date: String, 
+    /*date: String, */
     imgSrcDesktop: String,
     imgSrcMobile: String,
   },
@@ -86,6 +86,9 @@ export default {
     transform: translateX(-50%);
 }
 .storie-author {
+    font-size: 13px;
+}
+.storie-date {
     font-size: 13px;
 }
 .line {

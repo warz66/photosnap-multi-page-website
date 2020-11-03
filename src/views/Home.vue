@@ -160,7 +160,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .stories-box {
   /*margin-top: 42px;*/ /* mobile ajuste test */
   display: flex;

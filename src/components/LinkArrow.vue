@@ -39,7 +39,9 @@ a span {
   background-position-x: left;
   background-position-y: 11px;
 }
-a:hover > span {
-  background-size: 100% 1px;
+@media (hover: hover) and (pointer: fine) {
+  a:hover > span {
+    background-size: 100% 1px;
+  }
 }
 </style>

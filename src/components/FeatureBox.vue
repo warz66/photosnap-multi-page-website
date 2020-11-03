@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .feature-box {
         display: flex;
         flex-direction: column;

@@ -29,11 +29,15 @@ h1, h2 {
   }
 }
 h3 {
-  font-size:18px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: bold;
 }
-
+h4 {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
 p {
   opacity: 0.6;
 }
