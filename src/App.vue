@@ -7,15 +7,45 @@
 @import './assets/styles/minireset.min.css';
 /*@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");*/
 
+.attribution { font-weight: bold; font-size: 12px; text-align: center; margin-top: 10px; padding: 10px; /*color: darkgrey;*/ font-family: 'DM Sans', sans-serif;
+background-image: linear-gradient(45deg, #5A77FF, #BC7198, #FFC593);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: hue 5s infinite linear;
+}
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/*.attribution a { color: lightgrey }*/
+
+body {
+  background: linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url('./assets/images/design/desktop/presence.png');
+}
+
 #app {
+  margin-top: 40px !important;
   font-family: 'DM Sans', sans-serif;
   text-align: center;
   max-width: 1440px;
   margin:0 auto;
   font-size: 15px;
   line-height: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7);
 }
-
+@media (max-width: 1457px) {
+  #app {
+    margin-top: 0px !important;
+  }
+  .attribution {
+    display: none;
+  }
+}
 h1, h2 {
   font-size: 40px;
   line-height: 48px;
