@@ -4,7 +4,7 @@
             <span :id="idDesignLine" class="design-line" v-if="designLine"></span>
             <div :id="idHeroText" class="hero-text">
                 <h1>
-                <slot name="hero-title"></slot>
+                  <slot name="hero-title"></slot>
                 </h1>
                 <p :style="[ linkArrow ? 'margin-bottom: 48px;' : 'margin-bottom: 0 !important;' ]">
                 <slot name="hero-paragraph"></slot> 

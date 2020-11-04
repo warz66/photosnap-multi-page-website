@@ -14,8 +14,7 @@
         linkArrowWidth="168px"
         :imgSrcDesktop='require("../assets/images/home/desktop/create-and-share.jpg")'
         :imgSrcTablet='require("../assets/images/home/tablet/create-and-share.jpg")'
-        :imgSrcMobile='require("../assets/images/home/mobile/create-and-share.jpg")'
-  >
+        :imgSrcMobile='require("../assets/images/home/mobile/create-and-share.jpg")'>
     <template v-slot:hero-title>
       CREATE AND SHARE YOUR PHOTO STORIES.
     </template>
@@ -32,8 +31,7 @@
         linkArrowText="VIEW THE STORIES"
         :imgSrcDesktop='require("../assets/images/home/desktop/beautiful-stories.jpg")'
         :imgSrcTablet='require("../assets/images/home/tablet/beautiful-stories.jpg")'
-        :imgSrcMobile='require("../assets/images/home/mobile/beautiful-stories.jpg")'
-  >
+        :imgSrcMobile='require("../assets/images/home/mobile/beautiful-stories.jpg")'>
     <template v-slot:hero-title>
       BEAUTIFUL STORIES EVERY TIME
     </template>
@@ -50,8 +48,7 @@
         linkArrowText="VIEW THE STORIES"
         :imgSrcDesktop='require("../assets/images/home/desktop/designed-for-everyone.jpg")'
         :imgSrcTablet='require("../assets/images/home/tablet/designed-for-everyone.jpg")'
-        :imgSrcMobile='require("../assets/images/home/mobile/designed-for-everyone.jpg")'
-  >
+        :imgSrcMobile='require("../assets/images/home/mobile/designed-for-everyone.jpg")'>
     <template v-slot:hero-title>
       DESIGNED FOR EVERYONE
     </template>
@@ -63,44 +60,42 @@
 
   <section class="stories-box">
     <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/mountains.jpg")' 
-               :imgSrcMobile='require("../assets/images/stories/mobile/mountains.jpg")'
-    >
-    <template v-slot:storie-title>
-      The Mountains
-    </template>
-    <template v-slot:storie-author>
-      John Appleseed 
-    </template> 
+               :imgSrcMobile='require("../assets/images/stories/mobile/mountains.jpg")'>
+      <template v-slot:storie-title>
+        The Mountains
+      </template>
+      <template v-slot:storie-author>
+        John Appleseed 
+      </template> 
     </StorieBox>
+
     <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/cityscapes.jpg")' 
-               :imgSrcMobile='require("../assets/images/stories/mobile/cityscapes.jpg")'
-    >
-    <template v-slot:storie-title>
-      Sunset Cityscapes
-    </template>
-    <template v-slot:storie-author>
-      Benjamin Cruz
-    </template> 
+               :imgSrcMobile='require("../assets/images/stories/mobile/cityscapes.jpg")'>
+      <template v-slot:storie-title>
+        Sunset Cityscapes
+      </template>
+      <template v-slot:storie-author>
+        Benjamin Cruz
+      </template> 
     </StorieBox>
+
     <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/18-days-voyage.jpg")' 
-               :imgSrcMobile='require("../assets/images/stories/mobile/18-days-voyage.jpg")'
-    >
-    <template v-slot:storie-title>
-      18 Days Voyage
-    </template>
-    <template v-slot:storie-author>
-      Alexei Borodin 
-    </template> 
+               :imgSrcMobile='require("../assets/images/stories/mobile/18-days-voyage.jpg")'>
+      <template v-slot:storie-title>
+        18 Days Voyage
+      </template>
+      <template v-slot:storie-author>
+        Alexei Borodin 
+      </template> 
     </StorieBox>
     <StorieBox :imgSrcDesktop='require("../assets/images/stories/desktop/architecturals.jpg")' 
-               :imgSrcMobile='require("../assets/images/stories/mobile/architecturals.jpg")'
-    >
-    <template v-slot:storie-title>
-      Architecturals
-    </template>
-    <template v-slot:storie-author>
-      Samantha Brooke 
-    </template> 
+               :imgSrcMobile='require("../assets/images/stories/mobile/architecturals.jpg")'>
+      <template v-slot:storie-title>
+        Architecturals
+      </template>
+      <template v-slot:storie-author>
+        Samantha Brooke 
+      </template> 
     </StorieBox>
   </section>
 

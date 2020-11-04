@@ -9,7 +9,7 @@
         <img src="../assets/images/stories/desktop/moon-of-appalacia.jpg" alt="Moon of appalacia hero stories">
         <div id="hero-stories-text">
             <h4>LAST MONTH'S FEATURED STORY</h4>
-            <h2>HAZY FULL MOON OF APPALACHIA</h2>
+            <h1>HAZY FULL MOON OF APPALACHIA</h1>
             <div id="hero-stories-text-date-author">
                 March 2nd 2020 <strong>by John Appleseed</strong>
             </div>
@@ -201,7 +201,7 @@ export default {
     #hero-stories-text h4 {
         margin-bottom: 24px;
     }
-    #hero-stories-text h2 {
+    #hero-stories-text h1 {
         margin-bottom: 16px;
     }
     #hero-stories-text-date-author {

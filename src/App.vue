@@ -46,17 +46,22 @@ body {
     display: none;
   }
 }
-h1, h2 {
+h1 {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 4.17px;       
 }
 @media (max-width: 660px) {
-  h1, h2 {
+  h1 {
     font-size: 32px;
     line-height: 40px;
     letter-spacing: 3.33px;       
   }
+}
+h2 {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: bold;
 }
 h3 {
   font-size: 18px;

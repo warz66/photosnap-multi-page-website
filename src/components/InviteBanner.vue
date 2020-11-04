@@ -1,6 +1,6 @@
 <template>
     <section id="invite-banner">
-        <h2>WE'RE IN BETA. GET YOUR INVITE TODAY!</h2>
+        <h1>WE'RE IN BETA. GET YOUR INVITE TODAY!</h1>
         <LinkArrow :backgroundColor='true' :linkArrowWidth="'163px'">
             GET AN INVITE 
         </LinkArrow>
@@ -41,7 +41,7 @@ export default {
         left:0;
         background: linear-gradient(#5A77FF, #BC7198, #FFC593);
     }
-    #invite-banner h2 {
+    #invite-banner h1 {
         width: 400px;
         height: 144px;
         text-align: start;
@@ -53,7 +53,7 @@ export default {
         }
     }
     @media (max-width:660px) {
-        #invite-banner h2 {
+        #invite-banner h1 {
             width: 310px;
             height: 120px;
             text-align: start;
@@ -81,7 +81,7 @@ export default {
             padding: 32px 16px;
             justify-content: space-between;
         }
-        #invite-banner h2 {
+        #invite-banner h1 {
             width: 100%;
         }
     }
