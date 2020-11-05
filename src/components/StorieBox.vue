@@ -49,6 +49,16 @@ export default {
     cursor: pointer;
     transition: all 0.4s;
 }
+.storie-box picture::after {
+    position: absolute;
+    content:"";
+    height: 100%;
+    max-height: 375px;
+    width:100%;
+    bottom:0;
+    left:0;
+    background: linear-gradient(to top, rgba(0,0,0,0.66) 0%,rgba(0,0,0,0) 100%);
+}
 @media (hover: hover) and (pointer: fine) {
     .storie-box:hover {
         transform: translateY(-24px);
