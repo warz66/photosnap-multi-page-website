@@ -1,7 +1,7 @@
 <template>
     <header>
       <div id="header-not-mobile">
-        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt=""></router-link>
+        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt="logo photosnap"></router-link>
         <ul>
           <li><router-link to="stories">STORIES</router-link></li>
           <li><router-link to="features">FEATURES</router-link></li>
@@ -10,7 +10,7 @@
         <button><span>GET AN INVITE</span></button>
       </div>
       <div id="header-mobile">
-        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt=""></router-link>
+        <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt="logo photosnap"></router-link>
         <button :class="menuStateClass" @click="toggleMenu"></button>
       </div>
     </header>
@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     menuStateClass: function() {
-      return this.menuState ? 'is-active' : '' ;
+      return this.menuState ? 'is-active' : 'is-inactive' ;
     }
   }
 }

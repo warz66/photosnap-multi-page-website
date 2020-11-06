@@ -33,7 +33,7 @@
         :imgSrcTablet='require("../assets/images/home/tablet/beautiful-stories.jpg")'
         :imgSrcMobile='require("../assets/images/home/mobile/beautiful-stories.jpg")'>
     <template v-slot:hero-title>
-      BEAUTIFUL STORIES EVERY TIME
+      BEAUTIFUL STORIES<br>EVERY TIME
     </template>
     <template v-slot:hero-paragraph>
       We provide design templates to ensure your stories look terrific. Easily add 

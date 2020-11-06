@@ -19,7 +19,7 @@
         </div>
         <div class="info-plan-price">
           <span>${{ 19*ratio }}.00</span>
-          <p>per month</p>
+          <p>{{checked ? 'per year' : 'per month'}}</p>
         </div>
         <button><span>PICK PLAN</span></button>
       </div>
@@ -31,7 +31,7 @@
         </div>
         <div class="info-plan-price">
           <span>${{ 39*ratio }}.00</span>
-          <p>per month</p>
+          <p>{{checked ? 'per year' : 'per month'}}</p>
         </div>
         <button><span>PICK PLAN</span></button>
       </div>
@@ -43,7 +43,7 @@
         </div>
         <div class="info-plan-price">
           <span>${{ 99*ratio }}.00</span>
-          <p>per month</p>
+          <p>{{checked ? 'per year' : 'per month'}}</p>
         </div>
         <button><span>PICK PLAN</span></button>
       </div>

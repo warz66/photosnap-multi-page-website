@@ -105,7 +105,8 @@ export default {
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #bfbfbf;
+    background-color: #ffffff;
+    opacity:0.25;
     margin: 14px 0 20px 0px ;
 }
 @media (max-width: 1006px) {
