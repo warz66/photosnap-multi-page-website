@@ -10,10 +10,10 @@
         </LinkArrow>
 
         <ul id="footer-menu">
-            <li><a href="">HOME</a></li>
-            <li><a href="">STORIES</a></li>
-            <li><a href="">FEATURES</a></li>
-            <li><a href="">PRICING</a></li>
+            <li><router-link to="/">HOME</router-link></li>
+            <li><router-link to="stories">STORIES</router-link></li>
+            <li><router-link to="features">FEATURES</router-link></li>
+            <li><router-link to="pricing">PRICING</router-link></li>
         </ul>
 
         <div id="footer-social-network">

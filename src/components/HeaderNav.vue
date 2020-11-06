@@ -11,7 +11,7 @@
       </div>
       <div id="header-mobile">
         <router-link to="/"><img src="../assets/images/shared/desktop/logo.svg" alt="logo photosnap"></router-link>
-        <button :class="menuStateClass" @click="toggleMenu"></button>
+        <span :class="menuStateClass" @click="toggleMenu"></span>
       </div>
     </header>
     <transition name="slide">
@@ -122,18 +122,19 @@ export default {
     z-index: 20;
   }
 
-  #header-mobile button {
+  #header-mobile span {
     border:none;
     outline: 0;
     background-color: white;
     width:20px;
     height:6px;
     padding:0;
+    margin-top: 5px;
     position: relative;
     cursor: pointer;
   }
-  #header-mobile button::after,
-  #header-mobile button::before{
+  #header-mobile span::after,
+  #header-mobile span::before{
     content:"";
     width:20px;
     height:1px;
@@ -141,18 +142,18 @@ export default {
     display:block;
     position:absolute;
   }
-  #header-mobile button::after {
+  #header-mobile span::after {
       transform: translateY(2px);
       transition: transform 0.3s;
   }
-  #header-mobile button::before {
+  #header-mobile span::before {
       transform: translateY(-3px);
       transition: transform 0.3s;
   }
-  #header-mobile button.is-active:after {
+  #header-mobile span.is-active:after {
       transform:translateY(0px) rotate(-45deg);
   }
-  #header-mobile button.is-active:before {
+  #header-mobile span.is-active:before {
       transform:translateY(0px) rotate(45deg);
   }
 
