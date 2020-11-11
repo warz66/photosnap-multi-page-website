@@ -4,9 +4,9 @@
             <img :src="imgSrc" alt="">
         </div>
         <div>
-            <h3 class="feature-title">
+            <span class="feature-title">
                 <slot name="feature-title"></slot>
-            </h3>
+            </span>
             <p class="feature-text">
                 <slot name="feature-text"></slot>
             </p>
@@ -39,6 +39,10 @@ export default {
         display: block;
     }
     .feature-title {
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: bold;
         margin-bottom: 16px;
     }
 </style>

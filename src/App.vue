@@ -1,6 +1,20 @@
 <template>
+  <HeaderNav/>
   <router-view/>
+  <Footer/>
 </template>
+
+<script>
+import HeaderNav from '@/components/HeaderNav.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  components: {
+    HeaderNav,
+    Footer
+  },
+}
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
@@ -77,6 +91,7 @@ p {
   opacity: 0.6;
 }
 a {
+  color:inherit;
   text-decoration: none;
 }
 </style>

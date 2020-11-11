@@ -17,19 +17,19 @@
         </ul>
 
         <div id="footer-social-network">
-            <a href="">
+            <a href="#">
                 <img src="../assets/images/shared/desktop/facebook.svg" alt="logo facebook">
             </a>
-            <a href="">
+            <a href="#">
                 <img src="../assets/images/shared/desktop/youtube.svg" alt="logo you-tube">
             </a>
-            <a href="">
+            <a href="#">
                 <img src="../assets/images/shared/desktop/twitter.svg" alt="logo twitter">
             </a>
-            <a href="">
+            <a href="#">
                 <img src="../assets/images/shared/desktop/pinterest.svg" alt="logo pinterest">
             </a>
-            <a href="">
+            <a href="#">
                 <img src="../assets/images/shared/desktop/instagram.svg" alt="logo instagram">
             </a>
         </div>
@@ -45,8 +45,6 @@ export default {
   name: 'Footer',
   components: {
     LinkArrow,
-  },
-  props: {
   },
 }
 </script>
@@ -96,13 +94,13 @@ export default {
     }
     #footer-link {
         grid-area: c;
-
         justify-self: end;
     }
-    #footer-copyright{
+    #footer-copyright {
         grid-area: e;
         justify-self: end;
         align-self: end;
+        opacity:0.5;
     }
     #footer-social-network {
         grid-area: d;

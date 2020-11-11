@@ -5,8 +5,6 @@
   <!--<img src="../assets/images/design/mobile/Mobile-Home.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 375x;">-->
   <!--<img src="../assets/images/design/mobile/Mobile-Menu.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 375x;">-->
 
-  <HeaderNav/>
-
   <Hero heroHeight="650px"
         :backgroundColor='true'
         :designLine='true'
@@ -131,26 +129,20 @@
     </FeatureBox>
   </section>
 
-  <Footer/>
-
 </template>
 
 <script>
 
-import HeaderNav from '@/components/HeaderNav.vue'
 import Hero from '@/components/Hero.vue'
 import StorieBox from '@/components/StorieBox.vue'
 import FeatureBox from '@/components/FeatureBox.vue'
-import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
-    HeaderNav,
     Hero,
     StorieBox,
-    FeatureBox,
-    Footer
+    FeatureBox
   },
 }
 </script>

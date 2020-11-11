@@ -6,7 +6,7 @@
         </picture>
         <div class="storie-text">
             <span class="storie-date"><slot name="storie-date"></slot></span>
-            <h3><slot name="storie-title"></slot></h3>
+            <span class="storie-title"><slot name="storie-title"></slot></span>
             <span class="storie-author">by <slot name="storie-author"></slot></span>
             <span class="line"></span>
             <LinkArrow :backgroundColor='true' :linkArrowWidth="'100%'">
@@ -97,6 +97,12 @@ export default {
 }
 .storie-author {
     font-size: 13px;
+}
+.storie-title {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
 }
 .storie-date {
     font-size: 13px;

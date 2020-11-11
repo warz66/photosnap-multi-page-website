@@ -3,7 +3,7 @@
   <!--<img src="../assets/images/design/tablet/Tablet-Features.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 768px;">-->
   <!--<img src="../assets/images/design/mobile/Mobile-Features.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 375x;">-->
   <!--<img src="../assets/images/design/desktop/Desktop-Features-Active.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 1440px;">-->
-  <HeaderNav/>
+
   <Hero heroHeight="490px"
         :backgroundColor='true'
         :designLine='true'
@@ -84,25 +84,19 @@
 
   <InviteBanner/>
 
-  <Footer/>
-
 </template>
 
 <script>
-import HeaderNav from '@/components/HeaderNav.vue'
 import Hero from '@/components/Hero.vue'
 import FeatureBox from '@/components/FeatureBox.vue'
 import InviteBanner from '@/components/InviteBanner.vue'
-import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Features',
   components: {
-    HeaderNav,
     Hero,
     FeatureBox,
-    InviteBanner,
-    Footer
+    InviteBanner
   },
 }
 </script>

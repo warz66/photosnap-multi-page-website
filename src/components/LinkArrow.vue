@@ -1,5 +1,5 @@
 <template>
-    <a :style="'width: '+linkArrowWidth+';'">
+    <a href="#" :style="'width: '+linkArrowWidth+';'">
         <span class="link-arrow-text" :style="[backgroundColor ? 'background-image: linear-gradient(white,white);' : 'background-image: linear-gradient(black,black);']">
           <slot></slot>
         </span>

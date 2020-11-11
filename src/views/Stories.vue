@@ -3,7 +3,6 @@
     <!--<img src="../assets/images/design/tablet/Tablet-Stories.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 768px;">-->
     <!--<img src="../assets/images/design/mobile/Mobile-Stories.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 375x;">-->
     <!--<img src="../assets/images/design/desktop/Desktop-Stories-Active.jpeg" alt="" style="position:absolute; left:0; top:0; z-index: 2; opacity:0.3;  margin: 0; width: 1440px;">-->
-    <HeaderNav/>
 
     <section id="hero-stories">
         <img src="../assets/images/stories/desktop/moon-of-appalacia.jpg" alt="Moon of appalacia hero stories">
@@ -135,22 +134,17 @@
         </StorieBox>
   </section>    
 
-  <Footer/>
 </template>
 
 <script>
-import HeaderNav from '@/components/HeaderNav.vue'
 import LinkArrow from '@/components/LinkArrow.vue'
 import StorieBox from '@/components/StorieBox.vue'
-import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Stories',
   components: {
-    HeaderNav,
     LinkArrow,
-    StorieBox,
-    Footer
+    StorieBox
   },
   data() {
     return {
